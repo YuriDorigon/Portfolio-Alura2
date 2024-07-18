@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover:#272727;
+
+    --fonte-primaria: "Krona One", sans-serif;;
+    --fonte-secundaria:"Montserrat", sans-serif;;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.header{
+    padding: 2% 0 0 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header_link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.Title_destac {
+    color: var(--cor-terciaria);
+}
+
+
+.content_form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 615px;
+}
+
+.title_form {
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.description_form {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.subtitle_form{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+img{
+    display: flex;
+}
+
+.button_form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.button_form > a {
+    display: flex;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    width: 378px;
+    border: var(--cor-terciaria) 2px solid;
+    font-size: 24px;
+    text-align: center;
+    padding: 21.5px 0;
+    color: var(--cor-secundaria);
+    border-radius: 8px;
+    text-decoration: none;
+    justify-content: center;
+    gap: 16px;
+    transition: 0.2s;
+}
+
+.button_form > a:hover{
+    background-color: var(--cor-hover);
+    width: 400px;
+    transition: 0.2s;
+}
+
+.footer-bar{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 12px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+}
